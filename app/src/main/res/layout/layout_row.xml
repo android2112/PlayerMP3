@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:id="@+id/touchrow">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/mp3logo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/image"
+        android:layout_toEndOf="@+id/image"
+        tools:text="Title"
+        android:id="@+id/title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image"
+        android:layout_toEndOf="@+id/image"
+        tools:text="Artista"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/trattino"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image"
+        android:layout_toEndOf="@+id/artist"
+        android:text="-"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/artist" />
+
+
+    <TextView
+        android:layout_below="@+id/title"
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image"
+        android:layout_toEndOf="@+id/trattino"
+        tools:text="3.14"
+        android:layout_toRightOf="@+id/trattino" />
+
+
+
+
+
+</RelativeLayout>
