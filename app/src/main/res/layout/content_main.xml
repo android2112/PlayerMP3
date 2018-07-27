@@ -29,6 +29,7 @@
             android:background="#000000"/>
 
         <TextView
+            android:maxLines="1"
             android:id="@+id/testoTraccia"
             android:textStyle="bold"
             android:layout_marginTop="5dp"
